@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+   <channel>
+      <title>{{ rss.channel.title }}</title>
+      <link>{{ rss.channel.link }}</link>
+      <description>{{ rss.channel.description }}</description>
+      <language>{{ rss.channel.language }}</language>
+      <pubDate>{{ rss.channel.pubDate|date('D, d M Y H:i:s T') }}</pubDate>
+      <lastBuildDate>{{ rss.channel.lastBuildDate|date('D, d M Y H:i:s T') }}</lastBuildDate>
+      <docs>{{ rss.channel.docs }}</docs>
+      <generator>{{ rss.channel.generator }}</generator>
+      <managingEditor>{{ rss.channel.managingEditor }}</managingEditor>
+      <webMaster>{{ rss.channel.webMaster }}</webMaster>
+      {% if rss.channel.items|length > 0 %}
+      {% for item in rss.channel.items %}
+      <item>
+         <title>{{ item.title }}</title>
+         <link>{{ item.link }}</link>
+         <description>{{ item.description }}</description>
+          <pubDate>{{ item.pubDate|date('D, d M Y H:i:s T') }}</pubDate>
+         <guid>{{ item.guid }}</guid>
+      </item>
+      {% endfor %}
+      {% endif %}
+   </channel>
+</rss>
