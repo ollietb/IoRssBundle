@@ -43,7 +43,11 @@ class RssService
         if(count($errors) == 0)
             return true;
         else
+        {
+            foreach($errors as $e)
+                throw new \Exception($e->getMessage());
             return false;
+        }
     }
     
     public function render(Rss $rss){

@@ -18,7 +18,7 @@ class RssItem implements RssItemInterface {
      *
      * @var string
      * @Assert\Type(type="string")
-     * @Assert\NotBlank 
+     * @Assert\NotBlank(message="Item title should not be blank.") 
      */
     protected $title;
     
@@ -26,7 +26,7 @@ class RssItem implements RssItemInterface {
      *
      * @var string
      * @Assert\Type(type="string")
-     * @Assert\NotBlank 
+     * @Assert\NotBlank(message="Item link should not be blank.") 
      */
     protected $link;
     
@@ -34,7 +34,7 @@ class RssItem implements RssItemInterface {
      *
      * @var string
      * @Assert\Type(type="string")
-     * @Assert\NotBlank 
+     * @Assert\NotBlank(message="Item description should not be blank.") 
      */
     protected $description;
     

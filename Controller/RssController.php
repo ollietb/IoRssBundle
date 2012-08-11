@@ -22,6 +22,10 @@ class RssController extends Controller
         $channel->setDescription("put here rss description");
         
         $item = new RssItem();
+        $item->setDescription("item description ");
+        $item->setTitle("item title");
+        $item->setLink("http://www.github.com");
+        
         $channel->addItem($item);
         
         $rss = new Rss;
