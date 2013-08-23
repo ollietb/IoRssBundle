@@ -1,10 +1,10 @@
 <?php
 
-namespace Io\Bundle\RssBundle\Models;
+namespace Io\IoRssBundle\Models;
 use Symfony\Component\Validator\Constraints as Assert;
 
-use Io\Bundle\RssBundle\Interfaces\RssChannelInterface;
-use Io\Bundle\RssBundle\Interfaces\RssItemInterface;
+use Io\IoRssBundle\Interfaces\RssChannelInterface;
+use Io\IoRssBundle\Interfaces\RssItemInterface;
 use \DateTime;
 
 /**
@@ -34,7 +34,7 @@ class RssChannel implements RssChannelInterface {
      * @var array
      * @Assert\Valid
      * @Assert\All({
-     *     @Assert\Type(type="Io\Bundle\RssBundle\Interfaces\RssItemInterface"),
+     *     @Assert\Type(type="Io\IoRssBundle\Interfaces\RssItemInterface"),
      * })
      */
     protected $items = array();

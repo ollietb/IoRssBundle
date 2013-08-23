@@ -5,7 +5,7 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
-        <parameter key="io_rss.rss_service.class">Io\Bundle\RssBundle\Services\RssService</parameter>
+        <parameter key="io_rss.rss_service.class">Io\IoRssBundle\Services\RssService</parameter>
     </parameters>
 
     <services>

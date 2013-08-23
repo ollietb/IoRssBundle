@@ -1,6 +1,6 @@
 <?php
 
-namespace Io\Bundle\RssBundle\Models;
+namespace Io\IoRssBundle\Models;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**

@@ -1,6 +1,6 @@
 <?php
 
-namespace Io\Bundle\RssBundle\Interfaces;
+namespace Io\IoRssBundle\Interfaces;
 
 /**
  * This interface should be respect rss 2.0 specifics

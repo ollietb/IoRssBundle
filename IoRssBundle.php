@@ -1,6 +1,6 @@
 <?php
 
-namespace Io\Bundle\RssBundle;
+namespace Io\IoRssBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

@@ -1,13 +1,13 @@
 <?php
 
-namespace Io\Bundle\RssBundle\Controller;
+namespace Io\IoRssBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
-use Io\Bundle\RssBundle\Models\Rss;
-use Io\Bundle\RssBundle\Models\RssChannel;
-use Io\Bundle\RssBundle\Models\RssItem;
+use Io\IoRssBundle\Models\Rss;
+use Io\IoRssBundle\Models\RssChannel;
+use Io\IoRssBundle\Models\RssItem;
 
 class RssController extends Controller
 {

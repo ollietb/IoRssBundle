@@ -1,13 +1,13 @@
 <?php
 
-namespace Io\Bundle\RssBundle\Services;
+namespace Io\IoRssBundle\Services;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Templating\EngineInterface;
 
 use Symfony\Component\Validator\ValidatorInterface;
 
-use Io\Bundle\RssBundle\Models\Rss;
-use Io\Bundle\RssBundle\Interfaces\RssInterface;
+use Io\IoRssBundle\Models\Rss;
+use Io\IoRssBundle\Interfaces\RssInterface;
 
 
 class RssService
@@ -98,7 +98,7 @@ class RssService
 
     /**
      * 
-     * @return \Io\Bundle\RssBundle\Interfaces\RssInterface
+     * @return \Io\IoRssBundle\Interfaces\RssInterface
      */
     public function getRss() {
         return $this->rss;
@@ -106,7 +106,7 @@ class RssService
 
     /**
      * 
-     * @param \Io\Bundle\RssBundle\Interfaces\RssInterface $rss
+     * @param \Io\IoRssBundle\Interfaces\RssInterface $rss
      */
     public function setRss(RssInterface $rss) {
         $this->rss = $rss;

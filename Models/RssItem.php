@@ -1,9 +1,9 @@
 <?php
 
-namespace Io\Bundle\RssBundle\Models;
+namespace Io\IoRssBundle\Models;
 use Symfony\Component\Validator\Constraints as Assert;
 
-use Io\Bundle\RssBundle\Interfaces\RssItemInterface;
+use Io\IoRssBundle\Interfaces\RssItemInterface;
 use \DateTime;
 
 
