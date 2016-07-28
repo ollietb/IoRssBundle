@@ -4,7 +4,7 @@ namespace Io\IoRssBundle\Services;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Templating\EngineInterface;
 
-use Symfony\Component\Validator\ValidatorInterface;
+use Symfony\Component\Validator\Validator\ValidatorInterface;
 
 use Io\IoRssBundle\Models\Rss;
 use Io\IoRssBundle\Interfaces\RssInterface;
